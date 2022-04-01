@@ -40,8 +40,8 @@ footer {
 
 .content {
   padding: 20px 0px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flexbox;
+  flex-wrap: wrap;
 }
 
 /* ================================== */
@@ -66,7 +66,7 @@ footer {
 .tile-text {
   position: absolute;
   z-index: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
 }
 
@@ -74,6 +74,9 @@ footer {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/assets/hero.jpg");
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
@@ -83,15 +86,27 @@ footer {
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
+
 }
 .hero-input {
-  width: 80%;
+  display: flexbox;
+  text-align: center;
+  /* width: 80%; */
   height: 50px;
   padding: 16px;
   border-radius: 8px;
   border: none;
 }
-
+.search-bar{
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+}
+.input-bar{
+  width: 100%;
+}
 .nav-link {
   margin-right: 36px;
 }
