@@ -64,7 +64,7 @@ footer {
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .tile img:hover {
@@ -148,7 +148,7 @@ footer {
   /* 1. Fill in the required properties. */
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 
 }
 .adventure-card img:hover {
@@ -165,26 +165,58 @@ footer {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  margin: 10px;
 
 }
 
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+ width: 100%;
+ height: 100%;
+ border-radius: 1px;
+ object-fit: cover;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  filter:brightness(50%);
+  cursor: pointer;
 }
+
+
 .experience-content ul li {
   margin-left: 16px;
   padding: 0;
 }
 
+.parent {
+  position: relative;
+  /* margin-top: 50px; */
+  /* padding: 0px 70px 0px 0px; */
+  
+}
 @media only screen and (min-width: 768px) {
   /* For desktops phones: */
-  #reservation {
+  #reservation{
     width: 400px;
     position: fixed;
   }
 }
+
+@media only screen and (min-width: 300px) and (max-width: 760px){
+  #reservation{
+    width: 400px;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    padding: 0px;
+    background: white;
+    border: 3px 3px 4px gray;
+  
+  }
+  #content-section{
+    margin-bottom: 100px;
+  }
+}
+
